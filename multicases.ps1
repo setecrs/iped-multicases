@@ -1,5 +1,5 @@
 write-host "*****************************************************************"
-write-host "Script para cria��o de multicasos na apreens�o"
+write-host "Script para criação de multicasos na apreensão ou operação"
 write-host "*****************************************************************"
 
 if ($args.count -gt 1 ){
@@ -17,7 +17,7 @@ function FindJar ($path, $depth)
     }
     $subdirs = @(Get-ChildItem -Path $path -Dir -ErrorAction SilentlyContinue)
     $names = $subdirs | % {$_.Name}
-    if ("indexador" -in $names){
+    if ("iped" -in $names){
         return "$($path)\iped\lib\iped-search-app.jar"
     }
     foreach($s in $subdirs) {
