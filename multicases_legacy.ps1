@@ -1,6 +1,6 @@
-write-host "*****************************************************************"
-write-host "Script para criação de multicasos na apreensão ou operação"
-write-host "*****************************************************************"
+write-host "*****************************************************************************************"
+write-host "MULTICASES LEGACY (para IPED 3.x). Script para criação de multicasos em apreensoes ou operacoes"
+write-host "*****************************************************************************************"
 
 if ($args.count -gt 1 ){
    write-host "Este script não suporta multiplos argumentos. Saindo..."
@@ -39,6 +39,6 @@ if ($ipedSearch){
 }
 else {
    write-host "Não foi possivel encontrar arquivos IPED. Você está fazendo multicasos em uma operação ou apreensão?"
-   write-host "O script suporta multicasos no máximo em operacões. Saindo..."
+   write-host "O script suporta multicasos no máximo em OPERACOES. Saindo..."
 }
 pause
