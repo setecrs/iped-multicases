@@ -1,6 +1,6 @@
-write-host "*****************************************************************"
-write-host "Script para criação de multicasos na apreensão ou operação"
-write-host "*****************************************************************"
+write-host "*****************************************************************************************"
+write-host "MULTICASES para IPED 4.x. Script para criacao de multicasos em operacoes ou apreensoes"
+write-host "*****************************************************************************************"
 
 if ($args.count -gt 1 ){
    write-host "Este script não suporta multiplos argumentos. Saindo..."
@@ -8,7 +8,7 @@ if ($args.count -gt 1 ){
    exit
 }
 
-# Search for folder "indexador"
+# Search for folder "iped"
 # Returns a path to iped-search-app.jar
 function FindJar ($path, $depth)
 {
@@ -39,6 +39,6 @@ if ($ipedSearch){
 }
 else {
    write-host "Não foi possivel encontrar arquivos IPED. Você está fazendo multicasos em uma operação ou apreensão?"
-   write-host "O script suporta multicasos no máximo em operacões. Saindo..."
+   write-host "O script suporta multicasos no máximo em OPERACOES. Saindo..."
 }
 pause
